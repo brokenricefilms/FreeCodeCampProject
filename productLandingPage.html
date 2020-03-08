@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles/productLandingPage.css" media="all" />
+  </head>
+  <div id="header">
+    <header>
+      <div class="logo">
+        <a href="https://www.facebook.com/TheChilledCow/"
+          ><img id="header-img" src="images/logo_productLandingPage.png" alt=""
+        /></a>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#info">Info</a></li>
+          <li><a class="nav-link" href="#youtube">Youtube</a></li>
+          <li><a class="nav-link" href="#notification">Notification</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <body>
+    <section id="info">
+      <form id="form" action="">
+        <ul>
+          <p>🎼 Listen to the playlist on Spotify, Apple music and more</p>
+          <a href="https://bit.ly/chilledcow-playlists"
+            >→ https://bit.ly/chilledcow-playlists</a
+          >
+        </ul>
+        <ul>
+          <p>👕 Check out the ChilledCow merch</p>
+          <a href="https://bit.ly/chilledcow-merch"
+            >→ https://bit.ly/chilledcow-merch</a
+          >
+        </ul>
+      </form>
+    </section>
+    <section id="youtube" class="youtube-video">
+      <iframe
+        id="video"
+        src="https://youtube.com/embed/5qap5aO4i9A"
+        width="420"
+        height="315"
+        frameborder="0"
+      ></iframe>
+    </section>
+    <section id="notification">
+      <h2>Get notification</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your email here"
+          required
+        />
+        <input id="submit" type="submit" value="Ok" class="ok-button" />
+      </form>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

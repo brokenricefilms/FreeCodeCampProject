@@ -1,0 +1,47 @@
+/* Color Theme Swatches in Hex */
+.BALENCIAGA-—-E-Commerce-Redesign-Concept-1-hex {
+  color: #f2f2f2;
+}
+.BALENCIAGA-—-E-Commerce-Redesign-Concept-5-hex {
+  color: #0d0d0d;
+}
+
+body {
+  background: #f2f2f2;
+  color: #0d0d0d;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: #0d0d0d;
+}
+
+.project {
+  border: 5px solid #0d0d0d;
+  margin-top: 3em;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin: 1em;
+  list-style-type: none;
+}
+
+a {
+  color: #0d0d0d;
+  text-decoration: none;
+  font-weight: bold;
+  border: 3px solid #0d0d0d;
+  padding: 3px;
+}
+
+a:hover {
+  background-color: transparent;
+  padding: 6px;
+}

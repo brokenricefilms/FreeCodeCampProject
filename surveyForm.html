@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/surveyForm.css" media="all" />
+    <title>survery form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Login Form</h1>
+      <p id="description">"Welcome to my place"</p>
+    </header>
+    <form id="survey-form" action="">
+      <div class="form_group">
+        <label id="name-label" for="name">name</label>
+        <input
+          class="form-control"
+          id="name"
+          type="text"
+          placeholder="Your name"
+          required
+        />
+      </div>
+      <div class="form_group">
+        <label id="email-label" for="email">email</label>
+        <input
+          class="form-control"
+          id="email"
+          type="email"
+          placeholder="Your email"
+          required
+        />
+      </div>
+      <div class="form_group">
+        <label id="number-label" for="number">Your age</label>
+        <input
+          id="number"
+          type="number"
+          placeholder="Your age"
+          min="1"
+          class="form-control"
+          max="2000"
+          required
+        />
+      </div>
+      <div class="form_group">
+        <label for="dropdown">what your job?</label>
+        <select id="dropdown" name="what your job?">
+          <option disabled selected value="">Your job?</option>
+          <option value="Student">Student</option>
+          <option value="Gamer">Gamer</option>
+          <option value="Dev">Dev</option>
+        </select>
+      </div>
+      <div class="form_group">
+        <p>Do you love me?</p>
+        <label
+          ><input
+            name="love-or-hate"
+            type="radio"
+            value="love"
+            class="input-radio"
+            checked
+          />Love</label
+        >
+        <label for=""
+          ><input
+            name="love-or-hate"
+            type="radio"
+            value="hate"
+            class="input-radio"
+          />Hate</label
+        >
+      </div>
+      <div class="form_group">
+        <p>What food you like?</p>
+        <label for=""
+          ><input
+            type="checkbox"
+            name="food"
+            class="input-checkbox"
+            value="rice"
+          />rice</label
+        >
+        <label for=""
+          ><input
+            type="checkbox"
+            name="food"
+            class="input-checkbox"
+            value="bread"
+          />bread</label
+        >
+      </div>
+      <div class="form_group">
+        <p>Anything else? Comment below</p>
+        <textarea
+          placeholder="Enter your comment here"
+          id="textarea"
+          name="comment"
+          cols="30"
+          rows="10"
+          class="textarea"
+        ></textarea>
+      </div>
+      <div>
+        <button type="submit" id="submit">Done</button>
+      </div>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

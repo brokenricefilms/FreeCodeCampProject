@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+}
+
+.logo > #header-img {
+  margin: 1em auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-around;
+}
+
+li {
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 601px) {
+  #nav-bar {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #nav-bar {
+    font-size: 1.5rem;
+  }
+}
+
+#nav-bar {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #333333;
+}
+
+.nav-link {
+  color: #333333;
+}
+
+#info > form {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0em;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16.7465px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #333333;
+}
+
+#video {
+  margin: 0 auto;
+  display: block;
+}
+
+#notification > h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #333333;
+}
+
+#notification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2em 0px;
+}
+
+#notification > h2 {
+  margin: 5px 0px;
+}
+
+#notification input[type="email"] {
+  background: #ffffff;
+  border: 2px solid #333333;
+  box-sizing: border-box;
+
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+}
+
+#notification input[type="submit"] {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.1818px;
+  line-height: 21px;
+  display: flex;
+  cursor: pointer;
+
+  color: #333333;
+
+  margin: 5px auto;
+  background: #ffffff;
+  border: 2px solid #333333;
+  box-sizing: border-box;
+  border-radius: 6.5px;
+}

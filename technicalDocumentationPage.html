@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation</title>
+    <link
+      rel="stylesheet"
+      href="styles/technicalDocumentationPage.css"
+      media="all"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Fish Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+          <ul>
+            <li>
+              <a class="nav-link" href="#Installation_and_Start"
+                >Installation and Start</a
+              >
+            </li>
+
+            <li><a class="nav-link" href="#Installation">Installation</a></li>
+            <li>
+              <a class="nav-link" href="#Starting_and_Exiting"
+                >Starting and Exiting</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="#Executing_Bash">Executing Bash</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Default_Shell">Default Shell</a>
+            </li>
+            <li><a class="nav-link" href="#Uninstalling">Uninstalling</a></li>
+            <li>
+              <a class="nav-link" href="#Shebang_Line">Shebang Line</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="nav-link" href="#Syntax_overview">Syntax overview</a>
+          <ul>
+            <li>
+              <a class="nav-link" href="#Some_common_words"
+                >Some common words</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Installation</header>
+        <article>
+          <p>
+            This is the documentation for fish, the friendly interactive shell.
+          </p>
+          <p>
+            A shell is a program which helps you operate your computer by
+            starting other programs. fish offers a command-line interface
+            focused on usability and interactive use.
+          </p>
+          <p>
+            Unlike other shells, fish does not follow the POSIX standard, but
+            still roughly belongs to the same family.
+          </p>
+          <p>Some of the special features of fish are:</p>
+          <ul>
+            <li>
+              Extensive UI: syntax highlighting, autosuggestions, tab completion
+              and selection lists that can be navigated and filtered.
+            </li>
+            <li>
+              No configuration needed: fish is designed to be ready to use
+              immediately, without requiring extensive configuration.
+            </li>
+            <li>
+              Easy scripting: new functions can be added on the fly. The syntax
+              is easy to learn and use.
+            </li>
+          </ul>
+          <p>
+            This bit of the documentation is a quick guide on how to get going.
+            If you are new to this, see the tutorial.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Installation_and_Start">
+        <header>Installation and Start</header>
+        <article>
+          <p>
+            This section is on how to install, uninstall, start and exit a fish
+            shell and on how to make fish the default shell:
+          </p>
+          <ul>
+            <li>Installation: How to install fish</li>
+            <li>Starting and Exiting How to start and exit a fish shell</li>
+            <li>Executing Bash: How to execute bash commands in fish</li>
+            <li>Default Shell: How to switch to fish as the default shell</li>
+            <li>Uninstalling: How to uninstall fish</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Installation">
+        <header>Installation</header>
+        <article>
+          <p>
+            Up-to-date instructions for installing the latest version of fish
+            are on the fish homepage.
+          </p>
+          <p>
+            To install the development version of fish see the instructions at
+            the project's GitHub page.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Starting_and_Exiting">
+        <header>Starting and Exiting</header>
+        <article>
+          <p>
+            Once fish has been installed, open a terminal. If fish is not the
+            default shell:
+          </p>
+          <li>Enter fish to start a fish shell:</li>
+          <code> > fish </code>
+          <li>Enter exit to exit a fish shell:</li>
+          <code> > exit </code>
+        </article>
+      </section>
+      <section class="main-section" id="Executing_Bash">
+        <header>Executing Bash</header>
+        <article>
+          <p>
+            If fish is your default shell and you want to copy commands from the
+            internet that are written in a different shell language, bash for
+            example, you can proceed in the following way:
+          </p>
+
+          <p>
+            Consider, that bash is also a command. With man bash you can see
+            that there are two ways to do this:
+          </p>
+
+          <li>bash has a switch -c to read from a string:</li>
+
+          <code> > bash -c SomeBashCommand </code>
+          <p>
+            or bash without a switch, opens a bash shell that you can use and
+            exit afterwards.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Default_Shell">
+        <header>Default Shell</header>
+        <article>
+          <p>
+            You can make fish your default shell by adding fish's executable in
+            two places: - add <mark>/usr/local/bin/fish to /etc/shells</mark> -
+            change your default shell with <mark>chsh -s</mark> to
+            <mark>/usr/local/bin/fish</mark>
+          </p>
+          <p>For for detailed instructions see Switching to fish.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Uninstalling">
+        <header>Uninstalling</header>
+        <article>
+          <p>For uninstalling fish: see FAQ: Uninstalling fish.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Shebang_Line">
+        <header>Shebang Line</header>
+        <article>
+          <p>
+            Since scripts for shell commands can be written in many different
+            languages, they need to carry information about what interpreter is
+            needed to execute them: For this they are expected to have a first
+            line, the shebang line, which names an executable for this purpose:
+          </p>
+
+          <p>Example:</p>
+
+          <p>A scripts written in bash it would need a first line like this:</p>
+
+          <code> #!/bin/bash </code>
+          <p>
+            This line tells the shell to execute the file with the bash
+            interpreter, that is located at the path <mark>/bin/bash</mark>.
+          </p>
+
+          <p>
+            For a script, written in another language, just replace the
+            interpreter <mark>/bin/bash</mark> with the language interpreter of
+            that other language (for example <mark>/bin/python</mark> for a
+            <mark>python</mark> script)
+          </p>
+          <p>
+            This line is only needed when scripts are executed without
+            specifying the interpreter. For functions inside fish or when
+            executing a script with <mark>`fish /path/to/script</mark> they
+            aren't required (but don't hurt either!).
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Syntax_overview">
+        <header>Syntax overview</header>
+        <article>
+          <p>
+            Shells like fish are used by giving them commands. Every fish
+            command follows the same basic syntax.
+          </p>
+          <p>
+            A command is executed by writing the name of the command followed by
+            any arguments.
+          </p>
+          <p>Example:</p>
+
+          <code> echo hello world </code>
+          <p>
+            This calls the <mark>echo</mark> command. <mark>echo</mark> is a
+            command which will write its arguments to the screen. In the example
+            above, the output will be 'hello world'. Everything in fish is done
+            with commands. There are commands for performing a set of commands
+            multiple times, commands for assigning variables, commands for
+            treating a group of commands as a single command, etc.. And every
+            single command follows the same basic syntax.
+          </p>
+          If you want to find out more about the <mark>echo</mark> command used
+          above, read the manual page for the <mark>echo</mark> command by
+          writing: <mark>man echo</mark>
+          <p>
+            <mark>man</mark> is a command for displaying a manual page on a
+            given topic. The man command takes the name of the manual page to
+            display as an argument. There are manual pages for almost every
+            command on most computers. There are also manual pages for many
+            other things, such as system libraries and important files.
+          </p>
+          <p>
+            Every program on your computer can be used as a command in
+            <mark>fish</mark>. If the program file is located in one of the
+            directories in the PATH, you can just use the name of the program to
+            use it. Otherwise the whole filename, including the directory (like
+            <mark>/home/me/code/checkers/checkers</mark> or
+            <mark>../checkers</mark>) has to be used.
+          </p>
+          <p>Here is a list of some useful commands:</p>
+          <ul>
+            <li><mark>cd</mark>, change the current directory</li>
+            <li><mark>ls</mark>, list files and directories</li>
+            <li><mark>man </mark>, display a manual page on the screen</li>
+            <li><mark>mv</mark>, move (rename) files</li>
+            <li><mark>cp</mark>, copy files</li>
+            <li>
+              <mark>open</mark>, open files with the default application
+              associated with each filetype
+            </li>
+            <li><mark>less</mark>, list the contents of files</li>
+          </ul>
+          <p>
+            Commands and parameters are separated by the space character ' '.
+            Every command ends with either a newline (i.e. by pressing the
+            return key) or a semicolon '<mark>;</mark>'. More than one command
+            can be written on the same line by separating them with semicolons.
+          </p>
+          <p>
+            A switch is a very common special type of argument. Switches almost
+            always start with one or more hyphens '<mark>-</mark>' and alter the
+            way a command operates. For example, the '<mark>ls</mark>' command
+            usually lists all the files and directories in the current working
+            directory, but by using the '<mark>-l</mark>' switch, the behavior
+            of '<mark>ls</mark>' is changed to not only display the filename,
+            but also the size, permissions, owner and modification time of each
+            file.
+          </p>
+          <p>
+            Switches differ between commands and are documented in the manual
+            page for each command. Some switches are common to most command
+            though, for example '<mark>--help</mark>' will usually display a
+            help text, '<mark>-i</mark>' will often turn on interactive
+            prompting before taking action, while '<mark>-f</mark>' will turn it
+            off.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Some_common_words">
+        <header>Some common words</header>
+        <article>
+          <p>
+            This is a short explanation of some of the commonly used words in
+            fish.
+          </p>
+          <ul>
+            <li><strong>argument</strong> a parameter given to a command</li>
+            <li>
+              <strong>builtin</strong> a command that is implemented in the
+              shell. Builtins are commands that are so closely tied to the shell
+              that it is impossible to implement them as external commands.
+            </li>
+            <li>
+              <strong>command</strong> a program that the shell can run. In
+              another sense also specifically an external command (i.e. neither
+              a function or builtin).
+            </li>
+            <li>
+              <strong>function</strong> a block of commands that can be called
+              as if mmand. By using functions, it is possible to string toget
+              they were a single command. By using functions, it is possible to
+              string together multiple smaller commands into one more advanced
+              command.
+            </li>
+            <li><strong>job</strong> a running pipeline or command</li>
+            <li>
+              pipeline a set of commands stringed together so that the output of
+              one command is the input of the next command
+            </li>
+            <li>
+              <strong>redirection</strong> an operation that changes one of the
+              input/output streams associated with a job
+            </li>
+            <li>
+              <strong>switch</strong> a special flag sent as an argument to a
+              command that will alter the behavior of the command. A switch
+              almost always begins with one or two hyphens.
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
